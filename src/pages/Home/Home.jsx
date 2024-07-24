@@ -26,16 +26,18 @@ function Home() {
         <button type="submit">Cadastrar</button>
       </form>
 
-      <div>
+      {users.map((user) => (
+        <div key={user.id}>
         <div>
-          <p>Nome: </p>
-          <p>Idade: </p>
-          <p>Email: </p>
+          <p>Nome: {user.name}</p>
+          <p>Idade: {user.age}</p>
+          <p>Email: {user.email}</p>
         </div>
         <button>
           <img src={Trash} alt="Excluir" />
         </button>
       </div>
+      ))}
     </div>
   );
 }
