@@ -47,3 +47,35 @@ form > input {
     padding-left: 10px;
     outline: none;
 }
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c022f;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.card > p {
+    color: white;
+    font-weight: bold;
+}
+
+.card > p {
+    color: #fff;
+    font-weight: normal;
+}
+
+.card > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.card > button:hover {
+    opacity: 0.8;
+}
